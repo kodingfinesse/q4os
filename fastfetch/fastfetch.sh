@@ -5,5 +5,4 @@ mkdir build
 cd build
 cmake ..
 cmake --build . --target fastfetch --target flashfetch
-cmake --build . --target package
-sudo dpkg -i fastfetch*.deb
+sudo cmake --install . --prefix /usr/local
